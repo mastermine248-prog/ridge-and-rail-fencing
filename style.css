@@ -168,3 +168,27 @@ section[id]{scroll-margin-top:84px}
   .detail-next{grid-template-columns:1fr}
 }
 @media(prefers-reduced-motion:reduce){.testimonial-window{overflow-x:auto;-webkit-mask-image:none;mask-image:none}.testimonial-track{animation:none}}
+
+/* Design-first refinement: measured outdoor work, with the project as the focal point. */
+:focus-visible{outline:3px solid var(--orange);outline-offset:4px}
+.hero-media{isolation:isolate;box-shadow:18px 18px 0 rgba(23,32,24,.07)}
+.hero-media::before{content:"";position:absolute;z-index:2;top:0;left:0;width:86px;height:6px;background:var(--orange)}
+.hero-project-note{position:absolute;z-index:3;left:0;bottom:0;width:min(440px,94%);padding:22px 24px 20px;background:rgba(23,32,24,.94);color:#fff;display:grid;grid-template-columns:1fr auto;column-gap:22px;align-items:end;box-shadow:14px -14px 38px rgba(23,32,24,.15)}
+.hero-project-index{grid-column:1/-1;color:var(--yellow);font-size:10px;font-weight:700;letter-spacing:.15em;margin-bottom:14px}
+.hero-project-note strong,.hero-project-note div span{display:block}
+.hero-project-note strong{font:800 clamp(19px,2vw,25px)/1.15 var(--display);letter-spacing:-.04em;margin-bottom:6px}
+.hero-project-note div span{font-size:11px;line-height:1.45;color:#d0d6ca}
+.hero-project-note a{width:42px;height:42px;display:grid;place-items:center;border:1px solid rgba(255,255,255,.42);border-radius:50%;font-size:21px;transition:background .2s,color .2s}
+.hero-project-note a:hover,.hero-project-note a:focus-visible{background:var(--yellow);color:var(--ink)}
+.ticker{width:100%;margin-left:0;transform:none}
+.service-card{border-top:4px solid transparent}
+.service-card:hover,.service-card:focus-visible{border-top-color:var(--orange)}
+.service-card p{font-size:11px;line-height:1.5}
+.card-link{font-size:13px}
+.section-head>p,.intro-grid>div>p:not(.large-copy),.pricing-intro>p,.quote-copy>p{font-size:16px}
+.process-list p{font-size:14px;line-height:1.55}
+.price-card{min-height:650px}
+.price-card.featured{box-shadow:0 24px 60px rgba(23,32,24,.16);border-top:5px solid var(--yellow)}
+.price-card li{font-size:14px}
+@media(max-width:960px){.hero-media{box-shadow:10px 10px 0 rgba(23,32,24,.07)}.price-card{min-height:auto}}
+@media(max-width:600px){.hero-project-note{width:100%;padding:15px 17px}.hero-project-index{font-size:9px;margin-bottom:9px}.hero-project-note strong{font-size:18px}.hero-project-note div span{font-size:10px}.hero-project-note a{width:38px;height:38px}.section-head>p,.intro-grid>div>p:not(.large-copy),.pricing-intro>p,.quote-copy>p{font-size:15px}}
